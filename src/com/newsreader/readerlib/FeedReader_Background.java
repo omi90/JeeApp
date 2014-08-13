@@ -45,7 +45,11 @@ public class FeedReader_Background extends AsyncTask{
 			} catch (SAXException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			} catch (IOException e) {
+			}
+			catch(FileNotFoundException  e){
+				e.printStackTrace();
+			}
+			catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
