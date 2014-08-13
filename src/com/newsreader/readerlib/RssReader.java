@@ -32,15 +32,27 @@ import org.xml.sax.XMLReader;
 
 public class RssReader {
 
-    public static RssFeed read(URL url) throws SAXException, IOException {
-        return read(url.openStream());
+    public static RssFeed read(URL url) throws SAXException, IOException, FileNotFoundException  {
+        URL url = new URL(url);
+        BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
+		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("tmp.txt", Context.MODE_PRIVATE));
+        String inputLine;
+        while ((inputLine = in.readLine()) != null){
+            inputLine = inputLine.replaceFirst('<link rel="alternate"','<mainlink ');
+			outputStreamWriter.write(inputLine);
+		}
+        in.close();
+		outputStreamWriter.close();
+		InputStream inputStream = openFileInput("tmp.txt");
+		return inputStream;
+        //return read(url.openStream());
     }
     
     public static RssFeed read(String s) throws SAXException, IOException{
     	return read(new FileInputStream(new File(s)));
     }
         
-    public static RssFeed read(InputStream stream) throws SAXException, IOException {
+    public static RssFeed read(InputStream stream) throws SAXException, IOException, FileNotFoundException  {
 
         try {
 
