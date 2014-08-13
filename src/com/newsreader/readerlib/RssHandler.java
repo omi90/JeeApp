@@ -82,6 +82,8 @@ public class RssHandler extends DefaultHandler {
 			try {
 				if(qName.equals("content:encoded")) 
 					qName = "content";
+				if(qName.equals("mainlink")) 
+					qName = "link";
 				String methodName = "set" + qName.substring(0, 1).toUpperCase() + qName.substring(1);
 				Method method = rssItem.getClass().getMethod(methodName, String.class);
 				method.invoke(rssItem, stringBuilder.toString());
