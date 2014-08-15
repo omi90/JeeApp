@@ -1,5 +1,6 @@
 package com.newsreader.readerlib;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -35,7 +36,7 @@ public class FeedReader_Background extends AsyncTask{
 			System.out.println(feed_url);
 			//DBConnection2 dbc = new DBConnection2(context);
 			try {
-					RssFeed feed = RssReader.read(feed_url);
+					RssFeed feed = RssReader.read(feed_url,this.context);
 					rssItems = feed.getRssItems();
 					//System.out.println("Result of update>> "+dbc.updateSource(source, feed.getPubDate(), feed.getLastBuildDate(), feed.getTtl()));
 					

@@ -58,22 +58,26 @@ public class Books extends Activity implements OnNavigationListener {
 		dropDown.add("Chemistry Books");
 		dropDown.add("Aptitude Books");
 		
-		ArrayAdapter<String> adapter=new ArrayAdapter<>(getApplicationContext(),R.layout.dropdown_books, R.id.item, dropDown);
+		ArrayAdapter<String> adapter=new ArrayAdapter<String>(getApplicationContext(),R.layout.dropdown_books, R.id.item, dropDown);
 		actionBar.setListNavigationCallbacks(adapter, this);
-		
-		
-		
 		try {
 			 phyBook =xmlParser(1);
 			 matBook =xmlParser(2);
 			 chemBook =xmlParser(3);
 			 aptiBook =xmlParser(4);
 			 
-		} catch (ParserConfigurationException | SAXException | IOException e) {
+		} catch (ParserConfigurationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		catch(SAXException e){
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch(IOException e){
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	listView= (ListView)findViewById(R.id.listview);
 		
 		arrAdap adap =new arrAdap(getApplicationContext(),R.layout.books_list_view , 0, phyBook);

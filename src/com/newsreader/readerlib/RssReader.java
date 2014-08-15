@@ -13,13 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.newsreader.readerlib;
-
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.URL;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -30,48 +32,38 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
-public class RssReader {
+import android.content.Context;
 
-    public static RssFeed read(URL url) throws SAXException, IOException, FileNotFoundException  {
-        URL url = new URL(url);
+public class RssReader {
+    public static RssFeed read(URL url,Context context) throws SAXException, IOException, FileNotFoundException  {
         BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()));
-		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput("tmp.txt", Context.MODE_PRIVATE));
+		OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("tmp.txt", Context.MODE_PRIVATE));
         String inputLine;
         while ((inputLine = in.readLine()) != null){
-            inputLine = inputLine.replaceFirst('<link rel="alternate"','<mainlink ');
+            inputLine = inputLine.replaceAll("<link rel='alternate'","<mainlink ");
 			outputStreamWriter.write(inputLine);
 		}
         in.close();
 		outputStreamWriter.close();
-		InputStream inputStream = openFileInput("tmp.txt");
-		return inputStream;
+		InputStream inputStream = context.openFileInput("tmp.txt");
+		return read(inputStream);
         //return read(url.openStream());
     }
-    
     public static RssFeed read(String s) throws SAXException, IOException{
     	return read(new FileInputStream(new File(s)));
     }
-        
     public static RssFeed read(InputStream stream) throws SAXException, IOException, FileNotFoundException  {
-
         try {
-
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser parser = factory.newSAXParser();
             XMLReader reader = parser.getXMLReader();
             RssHandler handler = new RssHandler();
             InputSource input = new InputSource(stream);
-
             reader.setContentHandler(handler);
-            
             reader.parse(input);
-
             return handler.getResult();
-
         } catch (ParserConfigurationException e) {
             throw new SAXException();
         }
-
     }
-
 }

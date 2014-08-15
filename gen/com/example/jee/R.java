@@ -1034,8 +1034,8 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f060016;
         public static final int action_menu_presenter=0x7f060017;
         public static final int action_mode_close_button=0x7f060024;
-        public static final int action_refresh=0x7f06005d;
-        public static final int action_settings=0x7f06005c;
+        public static final int action_refresh=0x7f06005e;
+        public static final int action_settings=0x7f06005d;
         public static final int activity_chooser_view_content=0x7f060025;
         public static final int always=0x7f06000b;
         public static final int apti=0x7f060051;
@@ -1046,8 +1046,8 @@ containing a value of this type.
         public static final int checkbox=0x7f06002d;
         public static final int chemistry=0x7f060050;
         public static final int collapseActionView=0x7f06000d;
-        public static final int data=0x7f06005a;
-        public static final int dataMain=0x7f06005b;
+        public static final int data=0x7f06005b;
+        public static final int dataMain=0x7f06005c;
         public static final int default_activity_button=0x7f060028;
         public static final int desc=0x7f060059;
         public static final int desc_books=0x7f060055;
@@ -1091,6 +1091,7 @@ containing a value of this type.
         public static final int pubDate=0x7f060058;
         public static final int query=0x7f060043;
         public static final int radio=0x7f06002f;
+        public static final int readMore=0x7f06005a;
         public static final int register=0x7f06004b;
         public static final int search_badge=0x7f060032;
         public static final int search_bar=0x7f060031;

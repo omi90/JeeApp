@@ -18,6 +18,7 @@ package com.newsreader.readerlib;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.util.List;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
@@ -26,6 +27,7 @@ public class RssHandler extends DefaultHandler {
 	
 	private RssFeed rssFeed;
 	private RssItem rssItem;
+	private String curLink;
 	private StringBuilder stringBuilder;
 
 	@Override
@@ -44,11 +46,13 @@ public class RssHandler extends DefaultHandler {
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) {
 		stringBuilder = new StringBuilder();
-		
 		if(qName.equals("entry") && rssFeed != null) {
 			rssItem = new RssItem();
 			rssItem.setFeed(rssFeed);
 			rssFeed.addRssItem(rssItem);
+		}
+		if(qName.equals("mainlink")) {
+			curLink = attributes.getValue("href");
 		}
 	}
 
@@ -64,6 +68,9 @@ public class RssHandler extends DefaultHandler {
 			// Parse feed properties
 			
 			try {
+				if(qName != null && qName.equals("mainlink")) {
+					rssFeed.setMainlink(curLink);
+				}
 				if (qName != null && qName.length() > 0) {
 				    String methodName = "set" + qName.substring(0, 1).toUpperCase() + qName.substring(1);
 				    Method method = rssFeed.getClass().getMethod(methodName, String.class);
@@ -78,15 +85,15 @@ public class RssHandler extends DefaultHandler {
 			
 		} else if (rssItem != null) {
 			// Parse item properties
-			
 			try {
-				if(qName.equals("content:encoded")) 
-					qName = "content";
-				if(qName.equals("mainlink")) 
-					qName = "link";
-				String methodName = "set" + qName.substring(0, 1).toUpperCase() + qName.substring(1);
-				Method method = rssItem.getClass().getMethod(methodName, String.class);
-				method.invoke(rssItem, stringBuilder.toString());
+				if(qName.equals("mainlink")) {
+					rssItem.setMainlink(curLink);
+				}
+				else{
+					String methodName = "set" + qName.substring(0, 1).toUpperCase() + qName.substring(1);
+					Method method = rssItem.getClass().getMethod(methodName, String.class);
+					method.invoke(rssItem, stringBuilder.toString());
+				}
 			} catch (SecurityException e) {
 			} catch (NoSuchMethodException e) {
 			} catch (IllegalArgumentException e) {
@@ -94,7 +101,5 @@ public class RssHandler extends DefaultHandler {
 			} catch (InvocationTargetException e) {
 			}
 		}
-		
 	}
-
 }

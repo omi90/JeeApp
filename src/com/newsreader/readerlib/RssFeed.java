@@ -29,7 +29,7 @@ public class RssFeed implements Parcelable {
 	
 	private String published;
 	private String title;
-	private String link;
+	private String mainlink;
 	//private String content;
 	//private String language;
 	//private String ttl;
@@ -54,7 +54,7 @@ public class RssFeed implements Parcelable {
 		
 		Bundle data = source.readBundle();
 		title = data.getString("title");
-		link = data.getString("link");
+		mainlink = data.getString("mainlink");
 		rssItems = data.getParcelableArrayList("rssItems");
 		
 	}
@@ -64,7 +64,7 @@ public class RssFeed implements Parcelable {
 		
 		Bundle data = new Bundle();
 		data.putString("title", title);
-		data.putString("link", link);
+		data.putString("mainlink", mainlink);
 		data.putParcelableArrayList("rssItems", rssItems);
 		dest.writeBundle(data);
 	}
@@ -95,12 +95,12 @@ public class RssFeed implements Parcelable {
 		this.title = title;
 	}
 
-	public String getLink() {
-		return link;
+	public String getMainlink() {
+		return mainlink;
 	}
 
-	public void setLink(String link) {
-		this.link = link;
+	public void setMainlink(String mainlink) {
+		this.mainlink = mainlink;
 	}
 
 

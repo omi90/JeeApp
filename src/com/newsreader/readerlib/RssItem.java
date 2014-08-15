@@ -29,7 +29,7 @@ public class RssItem implements Comparable<RssItem>, Parcelable {
 
 	private RssFeed feed;
 	private String title;
-	private String link;
+	private String mainlink;
 	private Date updated;
 	//private String description;
 	private String content;
@@ -44,7 +44,7 @@ public class RssItem implements Comparable<RssItem>, Parcelable {
 		
 		Bundle data = source.readBundle();
 		title = data.getString("title");
-		link = data.getString("link");
+		mainlink = data.getString("mainlink");
 		updated = (Date) data.getSerializable("updated");
 	//	description = data.getString("description");
 		content = data.getString("content");
@@ -57,7 +57,7 @@ public class RssItem implements Comparable<RssItem>, Parcelable {
 		
 		Bundle data = new Bundle();
 		data.putString("title", title);
-		data.putString("link", link);
+		data.putString("mainlink", mainlink);
 		data.putSerializable("updated", updated);
 		//data.putString("description", description);
 		data.putString("content", content);
@@ -95,12 +95,13 @@ public class RssItem implements Comparable<RssItem>, Parcelable {
 		this.title = title;
 	}
 
-	public String getLink() {
-		return link;
+	public String getMainlink() {
+		return mainlink;
 	}
 
-	public void setLink(String link) {
-		this.link = link;
+	public void setMainlink(String mainlink) {
+		System.out.println(getTitle()+" >>>>>> "+mainlink);
+		this.mainlink = mainlink;
 	}
 
 	public Date getPubDate() {
