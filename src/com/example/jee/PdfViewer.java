@@ -1,37 +1,47 @@
 package com.example.jee;
 
-import android.view.Menu;
-import android.view.MenuItem;
+import android.app.Activity;
+import android.os.Bundle;
 
-public class PdfViewer extends net.sf.andpdf.pdfviewer.PdfViewerActivity {
+import com.joanzapata.pdfview.PDFView;
+import com.joanzapata.pdfview.listener.OnPageChangeListener;
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.pdf_viewer, menu);
-		return true;
+import static java.lang.String.format;
+
+public class PdfViewer extends Activity implements OnPageChangeListener {
+	public static String PDF_NAME = "com.example.jee.PDF_NAME";
+    private PDFView pdfView;
+    private String pdfName = "";
+    private Integer pageNumber = 1;
+    @Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+    	pdfName = getIntent().getStringExtra(PDF_NAME);
+    	setContentView(R.layout.activity_pdfviewer);
+    	pdfView = (PDFView) findViewById(R.id.pdfView);
+    	display(pdfName, true);
+    	super.onCreate(savedInstanceState);
 	}
+	void afterViews() {
+        display(pdfName, false);
+    }
+    private void display(String assetFileName, boolean jumpToFirstPage) {
+        if (jumpToFirstPage) pageNumber = 1;
+        setTitle(pdfName = assetFileName);
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
-	
-	public int getPreviousPageImageResource() { return R.drawable.left_arrow; }
-    public int getNextPageImageResource() { return R.drawable.right_arrow; }
-    public int getZoomInImageResource() { return R.drawable.zoom_in; }
-    public int getZoomOutImageResource() { return R.drawable.zoom_out; }
-    public int getPdfPasswordLayoutResource() { return R.layout.pdf_file_password; }
-    public int getPdfPageNumberResource() { return R.layout.dialog_pagenumber; }
-    public int getPdfPasswordEditField() { return R.id.etPassword; }
-    public int getPdfPasswordOkButton() { return R.id.btOK; }
-    public int getPdfPasswordExitButton() { return R.id.btExit; }
-    public int getPdfPageNumberEditField() { return R.id.pagenum_edit; }
+        pdfView.fromAsset(assetFileName)
+                .defaultPage(pageNumber)
+                .onPageChange(this)
+                .load();
+    }
+
+    @Override
+    public void onPageChanged(int page, int pageCount) {
+        pageNumber = page;
+        setTitle(format("%s    %s / %s", pdfName, page, pageCount));
+    }
+
+    private boolean displaying(String fileName) {
+        return fileName.equals(pdfName);
+    }
 }
