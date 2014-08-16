@@ -1,16 +1,29 @@
 package com.example.jee;
 
+import net.sf.andpdf.pdfviewer.PdfViewerActivity;
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class PracticePapers extends Activity {
+public class PracticePapers extends Activity implements OnClickListener{
 
-	@Override
+	private Button bt;
+	
+	@Override	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_practice_papers);
+		
+		bt=(Button)findViewById(R.id.button1);
+		
+		bt.setOnClickListener(this);
 	}
 
 	@Override
@@ -30,5 +43,13 @@ public class PracticePapers extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		Intent intent = new Intent(this, PdfViewer.class);
+	     intent.putExtra(PdfViewerActivity.EXTRA_PDFFILENAME, Environment.getExternalStorageDirectory() + "/jee2010.pdf");
+	     startActivity(intent);
 	}
 }

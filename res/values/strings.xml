@@ -38,11 +38,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_rss_loading">RssLoading</string>
     <string name="title_activity_registration">Registration</string>
-    <string name="title_activity_queries">Queries</string>
+    <string name="title_activity_queries">Queries and Suggestion</string>
     <string name="title_activity_syllabus_data">Physics syllabus</string>
     <string name="title_activity_syllabus_mathematics">SyllabusMathematics</string>
     <string name="title_activity_syllabus_chemistry">SyllabusChemistry</string>
     <string name="title_activity_syllabus_aptitude">SyllabusAptitude</string>
     <string name="title_activity_practice_papers">PracticePapers</string>
+    <string name="title_activity_pdf_viewer">PdfViewer</string>
 
 </resources>

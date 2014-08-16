@@ -1,7 +1,15 @@
 package com.example.jee;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Field;
 import java.util.regex.Pattern;
 
+import org.apache.commons.io.IOUtils;
+
+import android.R.string;
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.app.Activity;
@@ -11,7 +19,9 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -21,6 +31,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.mail.api.GMailSender;
 import com.popup.alerts.Popups;
@@ -67,6 +78,8 @@ public class Registration extends Activity {
 		      	}
 			}
 		email.setText(possibleEmail);
+		
+		
 		
 		
 		register.setOnClickListener(new OnClickListener() {
@@ -184,7 +197,10 @@ public class Registration extends Activity {
 									editor.putBoolean("status",true);
 									editor.apply();
 									
+									//getFileFromRawResource(Uri.parse("android.resource://com.example.jee/raw/jee2010"));
 									Popups.registrationStatus(Registration.this, "Congratulation !!\n Registration Succesfully Done..", true);
+									
+									
 								}
 							});
 		                      
@@ -248,4 +264,47 @@ public class Registration extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	
+	private void getFileFromRawResource(Uri rUri) {
+	    String uri = rUri.toString();
+	    String fn=null;
+	    // I've only tested this with raw resources
+	    if (uri.contains("/raw/")) {
+	        // Try to get the resource name
+	        String[] parts = uri.split("/");
+	        fn = parts[parts.length - 1];
+	    } else {
+	        
+	    }
+	    // Notice that I've hard-coded the file extension to .jpg
+	    // I was working with getting a File object of a JPEG image from my raw resources
+	    String dest = Environment.getExternalStorageDirectory() + "/jee2010.pdf";
+	    try {
+	        // Use reflection to get resource ID of the raw resource
+	        // as we need to get an InputStream to it
+	        // getResources(),openRawResource() takes only a resource ID
+	        R.raw r = new R.raw();
+	        Field frame = R.raw.class.getDeclaredField(fn);
+	        frame.setAccessible(true);
+	        int id = (Integer) frame.get(r);
+	        // Get the InputStream
+	        InputStream inputStream = getResources().openRawResource(id);
+	        FileOutputStream fileOutputStream = new FileOutputStream(dest);
+	        // IOUtils is a class from Apache Commons IO
+	        // It writes an InputStream to an OutputStream
+	        IOUtils.copy(inputStream, fileOutputStream);
+	        fileOutputStream.close();
+	        
+	    } catch (NoSuchFieldException e) {
+	        Log.e("MyApp", "NoSuchFieldException in getFileFromRawResource()");
+	    } catch (IllegalAccessException e) {
+	        Log.e("MyApp", "IllegalAccessException in getFileFromRawResource()");
+	    } catch (FileNotFoundException e) {
+	        Log.e("MyApp", "FileNotFoundException in getFileFromRawResource()");
+	    } catch (IOException e) {
+	        Log.e("MyApp", "IOException in getFileFromRawResource()");
+	    }
+	  
+	}    
 }

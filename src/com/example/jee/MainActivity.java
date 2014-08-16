@@ -71,21 +71,15 @@ public class MainActivity extends Activity implements AnimationListener {
 			}
 		});
 		
-		gmail.setOnTouchListener(new View.OnTouchListener() {
+		gmail.setOnClickListener(new OnClickListener() {
 			
 			@Override
-			public boolean onTouch(View v, MotionEvent event) {
-				switch (event.getAction()) {
-                case MotionEvent.ACTION_DOWN: {
-                  //  v.set(10, 10, 10, 10);
-                    break;
-                }
-                case MotionEvent.ACTION_CANCEL:{
-                    v.setPadding(0, 0, 0, 0);
-                    break;
-                }
-                }
-				return false;
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "amit_jmit@yaho.com"));
+			//	intent.putExtra(Intent.EXTRA_SUBJECT, "your_subject");
+			//	intent.putExtra(Intent.EXTRA_TEXT, "your_text");
+				startActivity(intent);
 			}
 		});
 		

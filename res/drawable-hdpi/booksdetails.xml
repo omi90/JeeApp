@@ -12,67 +12,49 @@
 <book>
     <bookId>1</bookId>
     <bookCat>1</bookCat>
-    <bookImg>phy_a</bookImg>
+    <bookImg>1</bookImg>
     <bookName>Concepts of Physics (Volume - 1)</bookName>
-    <bookDesc><![CDATA[(English) 1st Edition
-Author: H C Verma
-Publisher: BHARATI BHAWAN
-Length: 461 Pages]]></bookDesc>
+    <bookDesc>(English) 1st Edition\nAuthor: H C Verma\nPublisher: BHARATI BHAWAN\nLength: 461 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/concepts-physics-volume-1-english-1st/p/itmduqzbmtw2phgw?pid=9788177091878&amp;affid=chiragsach</bookBuy>
 </book>
 <book>
     <bookId>2</bookId>
     <bookCat>1</bookCat>
-    <bookImg>phy_b</bookImg>
+    <bookImg>2</bookImg>
     <bookName>Concepts of Physics Volume 2 PB</bookName>
-    <bookDesc><![CDATA[(English) Reprint Edition
-Author: Verma H C
-Publisher: Bharati Bhawan Pub.- Dis
-Length: 466 Pages]]></bookDesc>
+    <bookDesc>(English) Reprint Edition\nAuthor: Verma H C\nPublisher: Bharati Bhawan Pub.- Dis\nLength: 466 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/concepts-physics-volume-2-pb-english-reprint/p/itmdyufkhyhuhcda?pid=9788177092325&amp;affid=chiragsach</bookBuy>
 </book>
 <book>
     <bookId>3</bookId>
     <bookCat>1</bookCat>
-    <bookImg>phy_c</bookImg>
+    <bookImg>3</bookImg>
     <bookName>NCERT Solutions Physics Class 11th</bookName>
-    <bookDesc><![CDATA[PB (English)
-Author: Expert Compilations
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut
-Length: 456 Pages]]></bookDesc>
+    <bookDesc>PB (English)\nAuthor: Expert Compilations\nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut\nLength: 456 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/ncert-solutions-physics-class-11th-pb-english/p/itmd9y4ubg8323sv?pid=9789382111092&amp;affid=chiragsach</bookBuy>
 </book>
 <book>
     <bookId>4</bookId>
     <bookCat>1</bookCat>
-    <bookImg>phy_d</bookImg>
+    <bookImg>4</bookImg>
     <bookName>NCERT Solutions Physics (Class - 12th)</bookName>
-    <bookDesc><![CDATA[PB (English)
-Author: Expert Compilations
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut
-Length: 364 Pages]]></bookDesc>
+    <bookDesc>PB (English)\nAuthor: Expert Compilations\nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut\nLength: 364 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/ncert-solutions-physics-class-12th-pb-english/p/itmd9y4uua8f8mhd?pid=9789382111108&amp;affid=chiragsach</bookBuy>
 </book>
 <book>
     <bookId>5</bookId>
     <bookCat>1</bookCat>
-    <bookImg>phy_e</bookImg>
+    <bookImg>5</bookImg>
     <bookName>Handbook Physics: Key Notes Terms Definitions and Formulae</bookName>
-    <bookDesc><![CDATA[English-Arihant-Paperback (English)
-Author: Nipendra Bhatnagar
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut
-Length: 376 Pages]]></bookDesc>
+    <bookDesc>English-Arihant-Paperback (English)\nAuthor: Nipendra Bhatnagar\nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut\nLength: 376 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/handbook-physics-key-notes-terms-definitions-formulae-nipendra-bhatnagar-english-arihant-paperback-english/p/itmdgbx9ugswz52v?pid=9789350941782&amp;affid=chiragsach</bookBuy>
 </book>
 <book>
     <bookId>6</bookId>
     <bookCat>1</bookCat>
-    <bookImg>phy_f</bookImg>
+    <bookImg>6</bookImg>
     <bookName>IIT JEE Physics : 35 Years Chapterwise Solved Papers 2013-1979</bookName>
-    <bookDesc><![CDATA[(English) 11th Edition
-Author: D. C. Pandey
-Publisher: Arihant
-Length: 474 Pages]]></bookDesc>
+    <bookDesc>(English) 11th Edition\nAuthor: D. C. Pandey\nPublisher: Arihant\nLength: 474 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/iit-jee-physics-35-years-chapterwise-solved-papers-2013-1979-english-11th/p/itmdxv9r2rqeahzj?pid=9789350948156&amp;affid=chiragsach</bookBuy>
 </book>
 <!--    
@@ -82,34 +64,27 @@ Length: 474 Pages]]></bookDesc>
 <book>
     <bookId>7</bookId>
     <bookCat>2</bookCat>
-    <bookImg>mat_a</bookImg>
+    <bookImg>7</bookImg>
     <bookName>Senior Secondary School Math 12</bookName>
-    <bookDesc><![CDATA[Language: English
-Author: R. S. Aggarwal
-Publisher: Bharati Bhawan
-Length: 893 Pages]]></bookDesc>
+    <bookDesc>Language: English\nAuthor: R. S. Aggarwal\nPublisher: Bharati Bhawan\nLength: 893 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/senior-secondary-school-math-12-english/p/itmdyufkgcvcsuhe?pid=9788177099638&amp;affid=chiragsach</bookBuy>
 </book>
 
 <book>
     <bookId>8</bookId>
     <bookCat>2</bookCat>
-    <bookImg>mat_b</bookImg>
+    <bookImg>8</bookImg>
     <bookName>Senior Secondary School Mathematics for Class 11</bookName>
-    <bookDesc><![CDATA[(English) 7th Edition
-Author: R. S. Aggarwal
-Publisher: Bharati Bhawan Pub. and Dis.]]></bookDesc>
+    <bookDesc>(English) 7th Edition\nAuthor: R. S. Aggarwal\nPublisher: Bharati Bhawan Pub. and Dis.</bookDesc>
     <bookBuy>http://www.flipkart.com/senior-secondary-school-mathematics-class-11-english-7th/p/itmdfjfj8fyfzheu?pid=9789350270189&amp;affid=chiragsach</bookBuy>
 </book>
 
 <book>
     <bookId>9</bookId>
     <bookCat>2</bookCat>
-    <bookImg>mat_c</bookImg>
+    <bookImg>9</bookImg>
     <bookName>Problems Plus In IIT Mathematics</bookName>
-    <bookDesc><![CDATA[Language: English
-Author: A Das Gupta
-Publisher: Bharati Bhawan]]></bookDesc>
+    <bookDesc>Language: English\nAuthor: A Das Gupta\nPublisher: Bharati Bhawan</bookDesc>
     <bookBuy>http://www.flipkart.com/problems-plus-iit-mathematics-english/p/itmdyufkwbpcarfa?pid=9788177096576&amp;srno=t_1&amp;query=jee+mathematics&amp;affid=chiragsach</bookBuy>
 </book>
 
@@ -117,11 +92,9 @@ Publisher: Bharati Bhawan]]></bookDesc>
 <book>
     <bookId>10</bookId>
     <bookCat>2</bookCat>
-    <bookImg>mat_d</bookImg>
+    <bookImg>10</bookImg>
     <bookName>Textbook of Trigonometry for JEE Main-Advanced</bookName>
-    <bookDesc><![CDATA[PB (English)
-Author: Agarwal A M
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut]]></bookDesc>
+    <bookDesc>PB (English)\nAuthor: Agarwal A M\nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut</bookDesc>
     <bookBuy>http://www.flipkart.com/textbook-trigonometry-jee-main-advanced-pb-english/p/9789350943977?pid=9789350943977&amp;affid=chiragsach&amp;srno=t_3&amp;query=jee+mathematics</bookBuy>
 </book>
 
@@ -129,12 +102,9 @@ Publisher: Arihant Publications(I) Pvt.Ltd - Meerut]]></bookDesc>
 <book>
     <bookId>11</bookId>
     <bookCat>2</bookCat>
-    <bookImg>mat_e</bookImg>
+    <bookImg>11</bookImg>
     <bookName>IIT JEE Mathematics : 35 Yr Chapterwise Solved Papers 2013-1979</bookName>
-    <bookDesc><![CDATA[(English) 11th Edition
-Author: Amit M. Agarwal
-Publisher: Arihant
-Length: 538 Pages]]></bookDesc>
+    <bookDesc>(English) 11th Edition\nAuthor: Amit M. Agarwal\nPublisher: Arihant\nLength: 538 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/iit-jee-mathematics-35-years-chapterwise-solved-papers-2013-1979-english-11th/p/9789350948170?pid=9789350948170&amp;affid=chiragsach&amp;srno=t_4&amp;query=jee+mathematics</bookBuy>
 </book>
 
@@ -142,12 +112,9 @@ Length: 538 Pages]]></bookDesc>
 <book>
     <bookId>12</bookId>
     <bookCat>2</bookCat>
-    <bookImg>mat_f</bookImg>
+    <bookImg>12</bookImg>
     <bookName>JEE Main Mathematics in Just 40 Days 2014</bookName>
-    <bookDesc><![CDATA[Language: English
-Author: Rajeev Manocha
-Publisher: Arihant Publications
-Length: 518 Pages]]></bookDesc>
+    <bookDesc>Language: English\nAuthor: Rajeev Manocha\nPublisher: Arihant Publications\nLength: 518 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/jee-main-mathematics-just-40-days-2014-english-4th/p/9789351410584?pid=9789351410584&amp;affid=chiragsach&amp;srno=t_6&amp;query=jee+mathematics</bookBuy>
 </book>
 
@@ -159,32 +126,27 @@ Length: 518 Pages]]></bookDesc>
 <book>
     <bookId>13</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_a</bookImg>
+    <bookImg>13</bookImg>
     <bookName>A Textbook Of Physical Chemistry For Competitions Exams</bookName>
-    <bookDesc><![CDATA[For Jee and All Other Engineering Entrance Examinations
-Author: A.S. Singh, O.P. Tandon
-Publisher: G.R. Bathla Publications Pvt. Ltd (2012)]]></bookDesc>
+    <bookDesc>For Jee and All Other Engineering Entrance Examinations\nAuthor: A.S. Singh, O.P. Tandon\nPublisher: G.R. Bathla Publications Pvt. Ltd (2012)</bookDesc>
     <bookBuy>http://www.flipkart.com/textbook-physical-chemistry-competitions-jee-all-other-engineering-entrance-examinations/p/itmdt9gzav4mpftf?pid=RBKDFZGV2GVUHKUY&amp;affid=chiragsach</bookBuy>
 </book>
 
 <book>
     <bookId>14</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_b</bookImg>
+    <bookImg>14</bookImg>
     <bookName>Organic Chemistry For Competitions</bookName>
-    <bookDesc><![CDATA[Author: Dr O.P Tandon
-Publisher: G.R BATHLA &amp; SONS]]></bookDesc>
+    <bookDesc>Author: Dr O.P Tandon  \nPublisher: G.R BATHLA &amp; SONS</bookDesc>
     <bookBuy>http://www.flipkart.com/organic-chemistry-competitions/p/itmczaxz9ddm8d9g?pid=RBKCV5X39DHNZYFJ&amp;affid=chiragsach</bookBuy>
 </book>
 
 <book>
     <bookId>15</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_c</bookImg>
+    <bookImg>15</bookImg>
     <bookName>A New Pattern Text Book Of Inorganic Chemistry</bookName>
-    <bookDesc><![CDATA[For Competitions
-Author: O. P. Tandon
-Publisher: G. R. Bathla Publications (2013)]]></bookDesc>
+    <bookDesc>For Competitions\nAuthor: O. P. Tandon \nPublisher: G. R. Bathla Publications (2013)</bookDesc>
     <bookBuy>http://www.flipkart.com/new-pattern-text-book-inorganic-chemistry-competitions/p/itmdsx89ebq8xqk2?pid=RBKDFZGVDZH4U29N&amp;affid=chiragsach</bookBuy>
 </book>
 
@@ -192,12 +154,9 @@ Publisher: G. R. Bathla Publications (2013)]]></bookDesc>
 <book>
     <bookId>16</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_d</bookImg>
+    <bookImg>16</bookImg>
     <bookName>NCERT SOLUTIONS CHEMISTRY CLASS 11TH</bookName>
-    <bookDesc><![CDATA[F048 (English)
-Author: Expert Compilations
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut
-Length: 359 Pages]]></bookDesc>
+    <bookDesc>F048 (English)\nAuthor: Expert Compilations \nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut\nLength: 359 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/ncert-solutions-chemistry-class-11th-f048-english/p/itmd9y4urs338zuz?pid=9789382111115&amp;affid=chiragsach</bookBuy>
 </book>
 
@@ -205,12 +164,9 @@ Length: 359 Pages]]></bookDesc>
 <book>
     <bookId>17</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_e</bookImg>
+    <bookImg>17</bookImg>
     <bookName>NCERT Solutions Chemistry (Class-12th)</bookName>
-    <bookDesc><![CDATA[PB (English)
-Author: Expert Compilations
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut
-Length: 462 Pages]]></bookDesc>
+    <bookDesc>PB (English)\nAuthor: Expert Compilations\nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut\nLength: 462 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/ncert-solutions-chemistry-class-12th-pb-english/p/itmd9y4urrynzk68?pid=9789382111122&amp;affid=chiragsach</bookBuy>
 </book>
 
@@ -218,35 +174,26 @@ Length: 462 Pages]]></bookDesc>
 <book>
     <bookId>18</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_f</bookImg>
+    <bookImg>18</bookImg>
     <bookName>Handbook Chemistry: Key Notes Terms Definitions-Formulae</bookName>
-    <bookDesc><![CDATA[Paperback (English)
-Author: Hansraj Modi
-Publisher: Arihant Publications(I) Pvt.Ltd - Meerut
-Length: 558 Pages]]></bookDesc>
+    <bookDesc>Paperback (English)\nAuthor: Hansraj Modi\nPublisher: Arihant Publications(I) Pvt.Ltd - Meerut\nLength: 558 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/handbook-chemistry-key-notes-terms-definitions-formulae-hansraj-modi-english-arihant-paperback-english/p/9789350941799?pid=9789350941799&amp;affid=chiragsach&amp;srno=t_1&amp;query=jee+chemistry</bookBuy>
 </book>
 
 <book>
     <bookId>19</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_g</bookImg>
+    <bookImg>19</bookImg>
     <bookName>Modern Approach to Chemical Calculations</bookName>
-    <bookDesc><![CDATA[PB (English)
-Author: R. C. Mukherjee
-Publisher: BHARATI BHAWAN PUB.&amp; DIS.
-Length: 874 Pages]]></bookDesc>
+    <bookDesc>PB (English)\nAuthor: R. C. Mukherjee\nPublisher: BHARATI BHAWAN PUB.&amp; DIS.\nLength: 874 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/modern-approach-chemical-calculations-pb-english/p/9788177096415?pid=9788177096415&amp;affid=chiragsach&amp;srno=t_2&amp;query=jee+chemistry</bookBuy>
 </book>
 <book>
     <bookId>20</bookId>
     <bookCat>3</bookCat>
-    <bookImg>chem_h</bookImg>
+    <bookImg>20</bookImg>
     <bookName>IIT JEE Chemistry : 35 Years Chapterwise Solved Papers 2013-1979</bookName>
-    <bookDesc><![CDATA[(English) 11th Edition
-Author: Ranjeet Shahi
-Publisher: Arihant
-Length: 489 Pages]]></bookDesc>
+    <bookDesc>(English) 11th Edition\nAuthor: Ranjeet Shahi\nPublisher: Arihant\nLength: 489 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/iit-jee-chemistry-35-years-chapterwise-solved-papers-2013-1979-english-11th/p/itmdysxrez2agcv9?pid=9789350948163&amp;srno=t_3&amp;query=jee+chemistry&amp;affid=chiragsach</bookBuy>
 </book>
 
@@ -257,12 +204,9 @@ Length: 489 Pages]]></bookDesc>
 <book>
     <bookId>21</bookId>
     <bookCat>4</bookCat>
-    <bookImg>apti_a</bookImg>
+    <bookImg>21</bookImg>
     <bookName>PMT/IIT-JEE Foundation: Science, Mathematics, Mental Ability/Aptitude</bookName>
-    <bookDesc><![CDATA[(Class - 7) (English)
-Author: AIETS
-Publisher: AIETS
-Length: 534 Pages]]></bookDesc>
+    <bookDesc>(Class - 7) (English)\nAuthor: AIETS\nPublisher: AIETS\nLength: 534 Pages</bookDesc>
     <bookBuy>http://www.flipkart.com/pmt-iit-jee-foundation-science-mathematics-mental-ability-aptitude-class-7-english/p/9789382081005?pid=9789382081005&amp;affid=chiragsach&amp;srno=t_1&amp;query=jee+aptitude</bookBuy>
 </book>
 

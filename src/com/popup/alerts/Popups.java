@@ -52,6 +52,9 @@ public class Popups {
 				if(st){
 					Intent intent=new Intent(currtActvty1, MainActivity.class);
 					currtActvty1.startActivity(intent);
+				}else
+				{
+					currtActvty1.finish();
 				}
 				
 			}

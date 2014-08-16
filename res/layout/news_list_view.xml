@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:id="@+id/news"
     android:layout_margin="10dp"
-    android:background="#e1dede"
+   
      >
     
         <TextView 
@@ -13,30 +13,41 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:id="@+id/title"
-            
+            android:textColor="#ffffff"
+            android:textStyle="bold"
             />
           <TextView 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:id="@+id/pubDate"
-        
+            android:text="34-Ssadf3-234"
+        android:textColor="#e0e217"
             
             />
          <TextView 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
+            android:textSize="18sp"
             android:id="@+id/desc"
+            android:lines="4"
             
         
             />
             <TextView
                 android:id="@+id/readMore" 
-            	android:layout_width="wrap_content"
-            	android:layout_height="wrap_content"
-            	android:textSize="15sp"
-            	android:text="Click to read more .."
-            	android:layout_gravity="end"/>
-        
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Click to read more .."
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:textColor="#f2c334"
+            android:linksClickable="true"
+            />
+        <View 
+            android:layout_height="10dp"
+            android:layout_width="fill_parent"
+            android:background="#07879a"
+            />
        </LinearLayout>

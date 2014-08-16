@@ -12,10 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:src="@drawable/physics"
+        android:background="@drawable/item_selector"
         android:layout_margin="20dp"
         android:scaleType="fitXY"
         android:id="@+id/physics"
+        android:src="@drawable/physics"
       />
     <ImageView
         android:layout_width="wrap_content"
@@ -44,6 +45,8 @@
           android:layout_margin="20dp"
           android:id="@+id/apti"
         android:scaleType="fitXY"
+        android:padding="5dp"
+        android:background="@drawable/item_selector"
       />
 
 </LinearLayout>

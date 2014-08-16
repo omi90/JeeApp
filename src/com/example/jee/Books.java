@@ -52,6 +52,8 @@ public class Books extends Activity implements OnNavigationListener {
 		
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
 		
+	
+		
 		ArrayList<String> dropDown = new ArrayList<String>();
 		dropDown.add("Physics Books");
 		dropDown.add("Mathematics Books");
@@ -60,6 +62,9 @@ public class Books extends Activity implements OnNavigationListener {
 		
 		ArrayAdapter<String> adapter=new ArrayAdapter<String>(getApplicationContext(),R.layout.dropdown_books, R.id.item, dropDown);
 		actionBar.setListNavigationCallbacks(adapter, this);
+		
+		
+		
 		try {
 			 phyBook =xmlParser(1);
 			 matBook =xmlParser(2);

@@ -7,32 +7,78 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.jee.Queries" >
+    tools:context="com.example.jee.Queries"
+    android:background="#e1dede"
+    
+     >
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Queries/Suggestions"
         android:gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="29sp"
+        android:textStyle="bold"
+         
+         android:background="#e6e5e1"
+         android:layout_margin="7dp"
+         
          />
     
-    <EditText 
+    <TextView 
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:hint="Title"
-        
-        
+        android:gravity="left"
+        android:text="Title/Question"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        />
+    <EditText 
+        android:id="@+id/ques"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+  
+        />
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="left"
+        android:text="Description"
+        android:textSize="24sp"
         />
     
     <EditText 
         android:layout_width="fill_parent"
         android:layout_height="150dp"
-        android:hint="Enter your queries/suggestions here.."
-        
-        
-        
+
+         android:id="@+id/descn"
         />
-    
+      <Button
+                android:id="@+id/query_send"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:text="Send Query/Suggestion"
+                android:textSize="21sp"
+                  android:background="@drawable/item_selector"
+                  android:layout_marginTop="5dp"
+                  android:textColor="#ffffff"
+                 />
+ <TextView
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent"
+     android:layout_marginTop="7dp"
+     android:text="Please use this form to send us your questions about JEE Main. We answer your question as soon as possible on your mail. Also you can send the suggestion you would like to give about this application"
+     android:textSize="18sp"
+     
+      />
+     <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+         android:gravity="bottom"
+          android:text="www.jee-main.co.in"
+          android:layout_gravity="center_horizontal"
+          android:textSize="16sp"
+             android:textColor="#6790FF"
+          />
 
 </LinearLayout>
